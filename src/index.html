@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Author: OZITRU, Category: Landing, Price: $100">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat+Subrayada&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <title>MARYTEX - производство тканей и печать на тканях на заказ</title>
+</head>
+<body>
+  <div id="wrapper" class="wrapper">
+    <img src="assets/img/header/background.png" alt="background" >
+    <header class="header">
+      <div class="logo">
+        <a href="/"  class="title">MARYTEX</a>
+        <div class="description">Текстильная фабрика</div>
+      </div>
+      <nav class="main-menu">
+        <a href="#why-us">Почему мы</a>
+        <a href="#services">Услуги печати</a>
+        <a href="#types">Виды печати</a>
+        <a href="#advice">Консультация</a>
+      </nav>
+      <div class="contacts">
+        <div class="social">
+          <a href="https://t.me">
+            <img src="assets/img/header/telegram.png" alt="telegram" >
+          </a>
+          <a href="https://www.whatsapp.com">
+            <img src="assets/img/header/whatsapp.png" alt="whatsapp" >
+          </a>
+        </div>
+        <div class="phone">
+          <img src="assets/img/header/phone.png" alt="phone" >
+          <a href="tel:+">+7 967 211 72 77</a>
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <div>
+        <h1><span>Производство тканей</span> и печать на тканях на заказ</h1>
+        <p>Производство тканей на заказ отличается высоким качеством, 
+          разнообразием материалов и широкой палитрой расцветок и принтов. 
+          У нас вы можете заказать абсолютно любую ткань</p>
+      </div>
+      <img src="assets/img/hero/fabjet.png" alt="fabjet">
+      <a @click="open = true">Рассчитать стоимость</a>
+    </div>
+    <div id="types" class="types">
+      <img src="assets/img/types/background.png" alt="background">
+      <p>Создаем ткани с рисунками любой сложности - для одежды, аксессуаров, спорта и интерьера</p>
+      <h2>Виды нашей печати:</h2>
+      <div class="types__wrapper">
+        <div class="types__item">
+          <img src="assets/img/types/types.png" alt="types" >
+          <a href="assets/img/price/price.jpg" target="_blank">Скачать прайс</a>
+        </div>
+        <div class="types__item">
+          <div class="types__circle">
+            <h3>Цифровая</h3>
+          </div>
+          <div class="types__circle">
+            <h3>Ротационная</h3>
+          </div>
+          <div class="types__circle">
+            <h3>Пигментированная</h3>
+          </div>
+          <div class="types__circle">
+            <h3>Органически прямая</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advantage">
+      <img src="assets/img/advantage/background-top.png" alt="advantage" >
+      <div class="advantage__wrapper">
+        <div class="advantage__item">
+          <img src="assets/img/advantage/advantage-icon-1.png" alt="advantage-icon-1" >
+          <p>
+            <span>В наличии более 100</span> 
+            синтетических и натуральных основ ткани
+          </p>
+        </div>
+        <div class="advantage__item">
+          <img src="assets/img/advantage/advantage-icon-2.png" alt="advantage-icon-2" >
+          <p>
+            <span>Свое производство</span> 
+            ткани в Турции
+          </p>
+        </div>
+        <div class="advantage__item">
+          <img src="assets/img/advantage/advantage-icon-3.png" alt="advantage-icon-3" >
+          <p>
+            Печать 
+            <span>от 1 рулона</span> 
+          </p>
+        </div>
+        <div class="advantage__item">
+          <img src="assets/img/advantage/advantage-icon-4.png" alt="advantage-icon-4" >
+          <p>
+            <span>Быстрые сроки</span> 
+            изготовления
+          </p>
+        </div>
+        <div class="advantage__item">
+          <img src="assets/img/advantage/advantage-icon-5.png" alt="advantage-icon-5" >
+          <p>
+            <span>Современное и качественное</span> 
+            оборудование
+          </p>
+        </div>
+        <div class="advantage__item">
+          <img src="assets/img/advantage/advantage-icon-6.png" alt="advantage-icon-6" >
+          <p>
+            <span>Фотографическое</span> 
+            качество
+          </p>
+        </div>
+        <div class="advantage__item">
+          <img src="assets/img/advantage/advantage-icon-7.png" alt="advantage-icon-7" >
+          <p>
+            <span>Низкие</span> 
+            цены
+          </p>
+        </div>
+        <div class="advantage__item">
+          <img src="assets/img/advantage/advantage-icon-8.png" alt="advantage-icon-8" >
+          <p>
+            <span>Более 500</span> 
+            принтов на выбор
+          </p>
+        </div>
+        <div class="advantage__item">
+          <a @click="open = true">Рассчитать стоимость</a>
+        </div>
+      </div>
+      <img src="assets/img/advantage/background-bottom.png" alt="advantage" > 
+    </div>
+    <div class="about">
+      <img src="assets/img/about/background.png" alt="background" >
+      <div class="about__wrapper">
+        <p>У нас своя фабрика <br>по производству ткани, а это значит:</p>
+        <p>низкие цены и высокое качество сырья <br>для производства и печати</p>
+        <div>
+          <p><span>У нас есть натуральные и синтетические ткани</span> для одежды и спорта, 
+            для интерьера и декораций, прозрачные и светонепроницаемые, матовые и глянцевые, 
+            водоотталкивающие и негорючие, трикотажные, тянущиеся, фактурные</p>
+          <p>Мы можем произвести для вас абсолютно любую ткань с нуля, с любым составом</p>
+        </div>
+        <a href="assets/img/price/price.jpg" target="_blank">Скачать прайс</a>
+      </div>
+    </div>
+    <div id="services" class="services">
+      <img src="assets/img/services/prints.png" alt="prints">
+      <h2>Услуги печати</h2>
+      <div class="services__wrapper">
+        <p>Благодаря технологии печати активными чернилами на водной основе 
+          принты получаются такими яркими и сочными и не блекнут даже после многократных стирок
+        </p>
+        <img src="assets/img/services/services-icon.png" alt="services-icon"><p>Ткани и немецкие краски экологичны и гипоаллергенны</p>
+        <p>
+          <span>Одна из главных целей компании «MARYTEX»</span>
+           — реализации желаемых идей, замыслов, проектов и экспериментов нашим клиентам. 
+           Деятельность компании нацелена на развитие успешного партнёрского сотрудничества, 
+           путем обеспечения максимально полного комплекса необходимых материалов, тканей, трикотажа
+        </p>
+        <a href="assets/img/price/price.jpg" target="_blank">Скачать прайс</a>
+      </div>
+    </div>  
+    <div id="why-us" class="why-us">
+      <img src="assets/img/why-us/full-background.png" alt="why-us">
+      <img src="assets/img/why-us/background.png" alt="why-us">
+      <h2>Почему выбирают нас?</h2>
+      <div class="why-us__wrapper">
+        <div class="why-us__item">
+          <h3>Собственное производство</h3>
+          <p>Производим более 1 000 000 пог. метров ткани в год</p>
+        </div>
+        <div class="why-us__item">
+          <h3>Контроль качества</h3>
+          <p>Контролируем производство продукции на 100%</p>
+        </div>
+        <div class="why-us__item">
+          <h3>Минимальные сроки</h3>
+          <p>Заказ в несколько километров мы выполняем в течение рабочей недели</p>
+        </div>
+        <div class="why-us__item">
+          <h3>Все виды тканей</h3>
+          <p>Мы производим и печатаем на разнообразных тканях. В наличии более 100 основ и составов тканей</p>
+        </div>
+        <div class="why-us__item">
+          <h3>Индивидуальные условия</h3>
+          <p>Мы предоставляем хорошие скидки при заказе большого обьема В центре внимания нашей компании – 
+            интересы потребителя и соответствие самым высоким ожиданиям клиента</p>
+        </div>
+        <div class="why-us__item">
+          <h3>Фабричное качество</h3>
+          <p>Наши ткани обладают высокой износостойкостью, потребительскими свойствами и востребованны на рынке. 
+            Мы отслеживаем все передовые тенденции нашей отрасли, внедряем новейшие технологии в производство и задаем новые тренды</p>
+        </div>
+      </div>
+    </div>
+    <div id="advice" class="advice">
+      <img src="assets/img/advice/background.png" alt="background">
+      <h2>Получить консультацию</h2>
+      <div class="advice__wrapper">
+        <div class="advice__item">
+          <img src="assets/img/advice/advice.png" alt="advice">
+        </div>
+        <div class="advice__item">
+          <p>Наш менеджер свяжется с Вами в ближайшее время, чтобы ответить на ваш вопрос</p>
+          <input type="text" placeholder="Имя">
+          <input type="tel" name="tel" id="tel" placeholder="+9 999 999 99 99">
+          <textarea name="question" id="question" placeholder="Вопрос..."></textarea>
+          <a href="/" >Получить консультацию</a>
+        </div>
+      </div>
+    </div>
+    <a href="#" id="pagetop" class="back-to-top" v-show="scY > 200" @click="toTop">
+      <img src="assets/img/header/up.png" alt="up">
+    </a>
+    <Teleport to="body">
+      <div v-if="open" class="modal">
+        <div class="modal__wrapper">
+          <img src="assets/img/modal/background.jpg" class="modal__background" alt="background">
+          <span @click="open = false, restart()" class="close">×</span>
+          <div class="modal__content">
+            <div class="question" id="question">
+              <div class="question__container" v-if="quiz.questions.length > questionIndex" :key="questionIndex">
+                <header class="question__header">
+                  <div class="question__progress">
+                    <progress class="progress" :value="(questionIndex/quiz.questions.length)*100" max="100">
+                      {{(questionIndex/quiz.questions.length)*100}}%
+                    </progress>
+                    <p>{{(questionIndex/quiz.questions.length)*100}}% завершено</p>
+                  </div>
+                </header>
+                <h2 class="question__title">
+                  {{ quiz.questions[questionIndex].text }}
+                </h2>
+                <div class="option__container">
+                  <div class="option"
+                    v-for="(response, index) in quiz.questions[questionIndex].responses"
+                    @click="selectOption(questionIndex, index)"
+                    :class="{ 'is-selected': userResponses[questionIndex] == index}"
+                    :key="index" >
+                    {{ response.text }}
+                  </div>
+                </div>
+                <footer class="question__footer">
+                  <nav class="pagination" role="navigation" aria-label="pagination">
+                    <a class="button" @click="prev();" :disabled="questionIndex < 1">
+                      Назад
+                    </a>
+                    <a class="button" :class="(userResponses[questionIndex]==null)?'':'is-active'"
+                      @click="next();"
+                      :disabled="questionIndex>=quiz.questions.length">
+                      {{ (userResponses[questionIndex]==null)?'Пропустить':'Вперёд' }}
+                    </a>
+                  </nav>
+                </footer>
+              </div>
+              <div class="quiz-completed" v-if="questionIndex >= quiz.questions.length" :key="questionIndex" >
+                <form enctype="multipart/form-data" method="post" id="form" @submit.prevent="submitForm()" action="#">
+                  <div class="input">
+                    <input placeholder="Имя" id="username" class="username" name="name" type="text" minlength="2" maxlength="30" required>
+                  </div>
+                  <div class="input">
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Телефон" required>
+                  </div>
+                  <div class="submit" >
+                    <input value="Отправить" type="submit"  >
+                  </div>                             
+                  <div class="success success-hide">
+                    Заявка успешно отправлена!
+                  </div>
+                  <a class="button" @click="restart()">Пройти заново</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Teleport>
+  </div>
+
+  <script src="assets/js/vue.global.js"></script>
+  <script src="assets/js/main.min.js"></script>
+
+</body>
+</html>
