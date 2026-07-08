@@ -49,7 +49,6 @@ function styles() {
     .pipe(gulp.dest(paths.styles.dest))
 }
 
-// Обработка Java Script
 function scripts() {
   return gulp.src(paths.scripts.src)
   .pipe(sourcemaps.init())
@@ -69,14 +68,13 @@ function scripts() {
   .pipe(gulp.dest(paths.scripts.dest))
 }
 
-// Отслеживание изменений в файлах и запуск live сервера
 function watch() {
   gulp.watch(paths.html.src, html)
   gulp.watch(paths.styles.src, styles)
   gulp.watch(paths.scripts.src, scripts)
 }
 
-const build = gulp.series(clean, html, gulp.parallel(styles, scripts), watch);
+const build = gulp.series(clean, html, gulp.parallel(styles, scripts));
 
 
 exports.clean = clean;
