@@ -36,9 +36,6 @@ Dockerfile       # deploy Docker image
 docker-compose.yaml # deploy Docker container
 nginx.conf       # nginx configuration
 ```
-
-<div><img src="https://github.com/Olga-Zyukina/marytex/blob/master/Screenshot.png" title="MaryTex" alt="MaryTex"/></div>
-
 ## Development
 - Make sure you have Node.js installed.
 - Clone the repo to your machine.
@@ -53,3 +50,5 @@ nginx.conf       # nginx configuration
 - Deploy image & run container
 `docker compose up`
 Open browser: localhost:8088
+
+<div><img src="https://github.com/Olga-Zyukina/marytex/blob/master/Screenshot.png" title="MaryTex" alt="MaryTex"/></div>
