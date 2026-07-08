@@ -25,7 +25,7 @@ COPY send.php /usr/share/nginx/html/send.php
 COPY --chown=nginx:nginx --from=builder /app/index.html /usr/share/nginx/html/index.html
 COPY --chown=nginx:nginx --from=builder /app/assets /usr/share/nginx/html/assets
 
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT ["nginx", "-c", "/etc/nginx/nginx.conf"]
 CMD ["-g", "daemon off;"]
