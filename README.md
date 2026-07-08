@@ -51,5 +51,5 @@ nginx.conf       # nginx configuration
 - Deploy image
 `docker build .`
 - Deploy image & run container
-`docker compose up .`
+`docker compose up`
 Open browser: localhost:8088
