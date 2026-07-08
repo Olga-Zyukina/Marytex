@@ -124,8 +124,40 @@ Vue.createApp({
     prev: function () {
       if (this.quiz.questions.length > 0) this.questionIndex--;
     },
-    submitForm: async function () {
-      document.querySelector('.success').classList.remove('success-hide');
+    submitForm: async function (event) {
+      try {
+        let formData = new FormData(form);
+        for (let k = 0; k < this.userResponses.length; k++) {
+          formData.append(('question' + (k+1)), this.quiz.questions[k].text);
+          if (!this.quiz.questions[k].responses[this.userResponses[k]]) {
+            formData.append(('response' + (k+1)), "Нет ответа");
+          } else {
+            formData.append(('response' + (k+1)), (this.quiz.questions[k].responses[this.userResponses[k]].text));
+          }
+        }
+        const response = await fetch("send.php", {
+          method: 'POST',
+          body: formData
+        });
+        if (!response.ok) throw (`Ошибка при обращении к серверу: ${response.status}`);
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+          throw ('Ошибка обработки. Ответ не JSON');
+        }
+        const json = await response.json();
+        if (json.result === "success") {
+          document.querySelector('.success').classList.remove('success-hide');
+          let timerId = setInterval(function() {
+            document.querySelector('.success').classList.add('success-hide');
+          }, 5000);
+        } else { 
+          console.log(json);
+          throw (json.info);
+        }
+      } 
+      catch (error) {
+        alert(error);
+      }
     }
   }
 }).mount('#wrapper')
