@@ -25,7 +25,5 @@
     "sass": "^1.77.4"
   },
   "dependencies": {
-    "vue-backtotop": "^1.6.1",
-    "vue3-back-to-top": "^1.0.1"
   }
 }
